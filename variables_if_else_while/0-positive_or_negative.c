@@ -1,10 +1,12 @@
-#include <stdlib.h>                                                                                                                                    
-#include <time.h>                                                                                                                                      
-/**                                                                                                                                                    
- * Main - Entry point                                                                                                                                  
- *                                                                                                                                                      * Return:0                                                                                                                                            
+#include <stdlib.h>
+#include <time.h>
+/**
+ * Main - Entry point
+ *
+ * specifies return point
+ * Return:0
  */
-int main(void)                                                                                                                                         
+int main(void)
 {
 	int n;
 
