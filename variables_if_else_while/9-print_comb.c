@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- *  * main - Prints the alphabetic
- *   *
- *    * Return: 0
- *     **/
+ * main - Prints the alphabetic
+ *
+ * Return: 0
+ **/
 int main(void)
 {
 	int n, c;
@@ -17,7 +17,7 @@ int main(void)
 		putchar(' ');
 		putchar(c + '0');
 		}
-	if (n != '9' || c != '9');
+	if (n != '9' || c != '9')
 	{
 		putchar(',');
 		putchar(' ');
