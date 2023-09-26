@@ -5,11 +5,10 @@
  *
  * description - prints the alphabet
  *
- * Return: 0
+ * Return: void
  **/
 
-void print_alphabet(void);
-
+void print_alphabet(void)
 {
 	char c;
 
@@ -19,5 +18,4 @@ void print_alphabet(void);
 	putchar('\n');
 	}
 
-return (0);
 }
