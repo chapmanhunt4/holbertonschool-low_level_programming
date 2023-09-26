@@ -1,14 +1,14 @@
 #include <stdio.h>
 
 /**
- * print_alphabet - entry point
+ * print_alphabet_x10 - entry point
  *
  * description - prints the alphabet
  *
  * Return: void
  **/
 
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
 	char c;
 	int n;
