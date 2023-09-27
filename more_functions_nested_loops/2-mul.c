@@ -3,12 +3,12 @@
 /**
  * mul - Entry point
  *
- * Description - Multiple the int a with int b
+ * description: multiplies two integers
  *
- *@a - integer 
- *@b - integer
+ *@a: integer 
+ *@b: integer
  *
- * Return 0 on proper execution
+ * Return mul on proper execution
  **/
 
 int mul(int a, int b)
