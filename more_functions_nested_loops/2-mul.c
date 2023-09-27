@@ -5,14 +5,13 @@
  *
  * description: multiplies two integers
  *
- *@a: integer 
+ *@a: integer
  *@b: integer
  *
- * Return mul on proper execution
+ * Return: mul on proper execution
  **/
 
 int mul(int a, int b)
-
-	{
-		return (a * b);
-	}
+{
+	return (a * b);
+}
