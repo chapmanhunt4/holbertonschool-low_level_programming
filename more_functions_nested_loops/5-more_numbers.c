@@ -23,6 +23,6 @@ void more_numbers(void)
 		}
 		putchar('\n');
 		c = '0';
-		n = 14
+		n = 14;
 	}
 }
