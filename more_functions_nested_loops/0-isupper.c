@@ -10,7 +10,7 @@
 * Description: prints out "_putchar"
 **/
 
-int _isupper(int c);
+int _isupper(int c)
 {
 	if (c > 96 && c < 123)
 	{
