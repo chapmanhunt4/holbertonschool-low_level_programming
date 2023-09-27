@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * int mul - Entry point
+ * mul - Entry point
  *
- * Description - Multiple a to b
+ * Description - Multiple the int a with int b
  *
  * Return 0 on proper execution
  **/
