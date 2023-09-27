@@ -5,6 +5,9 @@
  *
  * Description - Multiple the int a with int b
  *
+ *@a - integer 
+ *@b - integer
+ *
  * Return 0 on proper execution
  **/
 
