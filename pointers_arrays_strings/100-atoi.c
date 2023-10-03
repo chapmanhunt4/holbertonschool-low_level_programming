@@ -30,8 +30,8 @@ int _atoi(char *str)
 		{
 			if (result * 10 == 2147483640 && str[i] == '8')
 				result = (result * 10) + 7;
-			else
-				result = (result * 10) + (str[i];
+			else 
+				result = (result * 10) + (str[i]);
 		}
 		i++;
 	}
