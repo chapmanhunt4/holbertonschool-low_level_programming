@@ -2,9 +2,9 @@
 #include <stddef.h>
 
 /**
- * _strstr - locates a substring 
- * @haystack: string that is being searched through
- * @needle: substring that is being searched for 
+ * _strstr - locates a substring
+ * @haystack: the string being searched for
+ * @needle: the substring being searched for
  *
  * Return: pointer to begining of substring, or null if not found
  **/
