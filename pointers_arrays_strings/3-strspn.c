@@ -26,9 +26,12 @@ unsigned int _strspn(char *s, char *accept)
 		}
 	if (*aptr == '\0')
 	{
+		s++;
+	}
+	else
+	{
 		return (total);
 	}
-	s++;
 	}
 	return (total);
 }
