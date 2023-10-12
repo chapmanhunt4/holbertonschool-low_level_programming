@@ -24,11 +24,11 @@ unsigned int _strspn(char *s, char *accept)
 			}
 			aptr++;
 		}
-		if (*aptr == '\0')
-		{
-			return (total);
-		}
-		s++;
+	if (*aptr == '\0')
+	{
+		return (total);
+	}
+	s++;
 	}
 	return (total);
 }
