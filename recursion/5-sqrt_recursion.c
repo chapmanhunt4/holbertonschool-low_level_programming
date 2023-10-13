@@ -3,6 +3,8 @@
 /**
  * _sqrt_recursion - returns natural square root of a number
  * @n: number to be returned
+ * @x: later to become input value in find_sqrt
+ * @y: later to return the square root in find_sqrt
  *
  * Return: the natural square root, or -1 if no natural sq root
  **/
@@ -27,7 +29,7 @@ int _sqrt_recursion(int n)
 
 /**
  * find_sqrt - provides calculation for recursion
- * @x: n from _sqrt_recursion
+ * @x: input value from _sqrt_recursion
  * @y: will be returned as the square root if there is a root
  *
  * Return: returns y if root exists, or -1 if not
