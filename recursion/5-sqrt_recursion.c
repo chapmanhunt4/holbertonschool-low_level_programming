@@ -7,7 +7,7 @@
  * Return: the natural square root, or -1 if no natural sq root
  **/
 
-int find_sqrt(int x, int y);
+int find_sqrt(int x, int y)
 
 int _sqrt_recursion(int n)
 {
@@ -27,9 +27,7 @@ int _sqrt_recursion(int n)
 
 /**
  * find_sqrt - provides calculation for recursion
- *
  * @x: n from _sqrt_recursion
- *
  * @y: will be returned as the square root if there is a root
  *
  * Return: returns y if root exists, or -1 if not
