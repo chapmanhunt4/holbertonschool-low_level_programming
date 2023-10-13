@@ -7,7 +7,7 @@
  * Return: the natural square root, or -1 if no natural sq root
  **/
 
-int find_sqrt(int x, int y)
+int find_sqrt(int x, int y);
 
 int _sqrt_recursion(int n)
 {
