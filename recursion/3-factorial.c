@@ -7,7 +7,7 @@
  * Return: the factorial of n, or -one if n < zero
  **/
 
-int factorial(int n);
+int factorial(int n)
 {
 	if (n < 0)
 	{
