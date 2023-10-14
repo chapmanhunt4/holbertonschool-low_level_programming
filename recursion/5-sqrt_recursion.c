@@ -5,8 +5,6 @@ int find_sqrt(int x, int y);
 /**
  * _sqrt_recursion - returns natural square root of a number
  * @n: number to be returned
- * @x: later to become input value in find_sqrt
- * @y: later to return the square root in find_sqrt
  *
  * Return: the natural square root, or -1 if no natural sq root
  **/
