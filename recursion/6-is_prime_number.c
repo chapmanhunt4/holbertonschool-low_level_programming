@@ -13,13 +13,12 @@ int is_prime_number(int n)
 	{
 		return (0);
 	}
-	else if (n == 1)
+	else if (n / is_prime_number(n - 1))
 	{
-		return (0);
+		return (1);
 	}
 	else
 	{
-		(n / is_prime_number(n - 1));
-		return (1);
+		return (0);
 	}
 }
