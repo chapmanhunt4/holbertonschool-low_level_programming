@@ -43,3 +43,4 @@ int find_prime(int x, int y)
 	{
 		return (find_prime(x, y + 1));
 	}
+}
