@@ -11,6 +11,8 @@
 
 int main(int argc, char *argv[])
 {
+	int argv = *argv[]
+
 	if (argv <=  1)
 	{
 		printf("Error\n");
@@ -22,6 +24,6 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		return (*argv[0] + add(*argv[0] + 1));
+		return (argv[0] + add(argv[0] + 1));
 	}
 }	
