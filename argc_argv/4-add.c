@@ -19,7 +19,7 @@ int main(int argc, char **argv)
 	{
 		int num = atoi(argv[i]);
 
-		if (num < '9' || num > '0')
+		if (num < 9 || num > 0)
 		{
 			printf("Error\n");
 			return (1);
