@@ -11,16 +11,17 @@
 
 int main(int argc, char *argv[])
 {
-	if (argv < 0)
+	if (*argv < 0)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	else if (argc = 0)
+	else if (*argc = 0)
 	{
 		printf("0\n");
 	}
 	else
 	{
-		return (argv[0] + add(argv[0] + 1));
-	}	
+		return (*argv[0] + add(*argv[0] + 1));
+	}
+}	
