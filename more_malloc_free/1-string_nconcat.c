@@ -16,14 +16,17 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *str;
 	unsigned long int i;
 	unsigned long int c;
-	unsigned long int num = *s2;
 
 	if (!s1)
 		s1 = "";
 	if (!s2)
 		s2 = "";
+	if (n > strlen(s2))
+		num = strlen(s2);
+	else
+		num = n;
 
-	str = malloc(strlen(s1) + strlen(s2) + 1);
+	str = malloc(strlen(s1) + num + 1);
 
 	if (str)
 	{
@@ -31,18 +34,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		{
 			str[i] = s1[i];
 		}
-		for (c = 0; c < strlen(s2); c++)
+		for (c = 0; c < num; c++)
 		{
-			if (n >= num)
-			{
-				str[i] = s2[c];
-				i++;
-			}
-			else
-			{
-				str[i] = s2[c];
-				i++;
-			}
+			str[i] = s2[c];
+			i++;
 		}
 		return (str);
 	}	
