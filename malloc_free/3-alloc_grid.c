@@ -38,16 +38,16 @@ int **alloc_grid(int width, int height)
 			else
 			{
 				for (; i >= 0; i--)
-					free(array[i];
+					free(array[i]);
 				free(array);
 				return (0);
 			}
 		}
-		return (arr);
+		return (array);
 	}
 	else
 	{
-		free(arr);
+		free(array);
 		return (0);
 	}
 }
