@@ -28,11 +28,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		for (i = 0; i < strlen(s1); i++)
 		{
-			str[i] = s1[i]
+			str[i] = s1[i];
 		}
 		for (c = 0; c < strlen(s2); c++)
 		{
-			if (n >= s2)
+			if (n >= &s2)
 			{
 				str[i] = s2[c];
 				i++;
