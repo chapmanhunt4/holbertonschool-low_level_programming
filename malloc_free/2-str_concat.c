@@ -27,14 +27,14 @@ char *str_concat(char *s1, char *s2)
 	{
 		for (i = 0; i < strlen(s1); i++)
 		{
-			conc[i] = s1[i]
+			conc[i] = s1[i];
 		}
 		for (c = 0; c < strlen(s2); c++)
 		{
 			conc[i] = s2[c];
 			i++;
 		}
-		return (conc)
+		return (conc);
 	}
 	else
 	{
