@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * create_array - creates an array of chars, initialized with specific char
@@ -26,7 +26,7 @@ char *create_array(unsigned int size, char c)
 	{
 		for (i = 0; i < size; i++)
 		{
-			char_array[i] = c
+			char_array[i] = c;
 		}
 	}
 	else
