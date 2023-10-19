@@ -16,6 +16,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *str;
 	unsigned long int i;
 	unsigned long int c;
+	int num = &s2;
 
 	if (!s1)
 		s1 = "";
@@ -32,7 +33,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		}
 		for (c = 0; c < strlen(s2); c++)
 		{
-			if (n >= &s2)
+			if (n >= num)
 			{
 				str[i] = s2[c];
 				i++;
