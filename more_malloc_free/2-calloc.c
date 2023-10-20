@@ -12,13 +12,16 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *ptr;
+	unsigned int num;
 
-	if (nmemb == 0 || size == 0)
+	if (nmemb >=1 && size >= 1)
+	{
+		num = nmemb * size;
+	}
+	else
 	{
 		return (0);
 	}
-
-	int num = nmemb * size;
 
 	ptr = malloc(num);
 
