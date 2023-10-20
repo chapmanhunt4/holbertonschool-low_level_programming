@@ -15,7 +15,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	void *ptr;
 	unsigned int num;
 
-	if (nmemb >=1 && size >= 1)
+	if (nmemb >= 1 && size >= 1)
 	{
 		num = nmemb * size;
 	}
