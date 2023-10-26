@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * free_dog - frees the doggo
+ * free_dog - frees the doggo, Git change
  * @d: doggo
  **/
 
