@@ -3,23 +3,27 @@
 
 void print_dog(struct dog *d)
 {
-	char n = (nil);
 	int i;
 
-	if (d == NULL)
-	{
-		return
-	}
 	if (d)
 	{
-		for (i = 0; i < d; i++)
-		{
-			d[i] == NULL;
-			printf("%c", n);
-		}
-	}
-	if (name == NULL)
+	if (d->name == NULL)
 	{
-		printf("Name: %c", n);
+		printf("Name: (nil)\n");
+	}
+	else
+	{
+		printf("Name: %s\n", d->name);
+	}
+	printf("Age: %f\n", d->age);
+
+	if (d->owner == NULL)
+	{
+		printf("Owner: (nil)\n");
+	}
+	else
+	{
+		printf("Owner: %s\n", d->owner);
+	}
 	}
 }
