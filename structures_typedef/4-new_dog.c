@@ -11,7 +11,7 @@
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *new;
+	dog_t *new = dog;
 	char *n = strdup(name);
 	char *o = strdup(owner);
 
