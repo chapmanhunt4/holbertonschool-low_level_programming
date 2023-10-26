@@ -23,6 +23,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 		new->owner = o;
 		return (new);
 	}
+		n = malloc(strlen(name) + 1);
+		o = malloc(strlen(owner) + 1);
 
 	free(new);
 	free(n);
