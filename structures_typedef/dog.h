@@ -1,7 +1,7 @@
 #ifndef MAIN
 #define MAIN
 
-#define struct dog
+struct dog
 {
 	char *name;
 	float age;
