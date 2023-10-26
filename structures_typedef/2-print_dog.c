@@ -3,7 +3,7 @@
 
 void print_dog(struct dog *d)
 {
-	char n = (nil)
+	char n = (nil);
 	int i;
 
 	if (d == NULL)
