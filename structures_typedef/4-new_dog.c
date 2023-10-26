@@ -20,8 +20,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 		new->name = n;
 		new->age = age;
 		new->owner = o;
+		return (new);
 	}
-	return (new);
 	else
 	{
 		return(0);
