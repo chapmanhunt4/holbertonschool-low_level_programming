@@ -1,6 +1,11 @@
 #include "dog.h"
 #include <stdio.h>
 
+/**
+ * print_dog - prints info from struct dog
+ * @d: dog whose info is recorded
+ **/
+
 void print_dog(struct dog *d)
 {
 
