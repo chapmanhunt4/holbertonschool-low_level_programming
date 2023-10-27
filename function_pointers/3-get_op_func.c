@@ -22,7 +22,7 @@ int (*get_op_func(char *operator))(int, int)
 	};
 	int i = 0;
 
-	while (ops[i].op != NULL)
+	while (i < 5)
 	{
 		if (operator[0] == ops[i].op[0] || ops[i].op == NULL)
 		{
@@ -30,5 +30,5 @@ int (*get_op_func(char *operator))(int, int)
 		}
 		i++;
 	}
-	return (NULL);
+	return (0);
 }
