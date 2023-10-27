@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit (100);
 	}
-	result = calc_func(num1, num2);
+	result = calc_func(num1, operator, num2);
 
 	return (result);
 }
