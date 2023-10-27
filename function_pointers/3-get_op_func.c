@@ -5,7 +5,7 @@
 
 /**
  * get_op_func - points to function called by user
- * @s: operator passed to program
+ * @operator: operator passed to program
  *
  * Return: a pointer to the function called
  **/
