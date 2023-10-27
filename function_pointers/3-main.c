@@ -16,8 +16,12 @@ int (*get_op_func(char *s))(int, int);
 int main(int argc, char *argv[])
 {
 	int result;
+	int num1;
+	int num2;
 	char *operator = NULL;
 
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[3]);
 	*operator = argv[2][0];
 
 	if (argc != 4)
@@ -35,7 +39,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit (100);
 	}
-	result = (*get_op_func(argv[2]))(atoi(argv[1]), atoi(argv[3]));
+	result = (*get_op_func(argv[2])), num1, num2;
 
 	printf("%d\n", result);
 	return (0);
