@@ -3,6 +3,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+int (*get_op_func(char *s))(int, int);
+
 /**
  * main - entry point
  * @argc: argument count
@@ -21,7 +23,7 @@ int main(int argc, char *argv[])
 
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
-	*operator = argv[2][0];
+	operator = argv[2];
 	calc_func = get_op_func(operator);
 
 	if (argc != 4)
@@ -34,7 +36,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit (99);
 	}
-	if (argv[3] == 0)
+	if (num2 <= 0))
 	{
 		printf("Error\n");
 		exit (100);
