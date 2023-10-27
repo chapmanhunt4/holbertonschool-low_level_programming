@@ -10,7 +10,7 @@ int (*get_op_func(char *s))(int, int);
  * @argc: argument count
  * @argv: arguments
  *
- * Return: result of operation, or Error if fail
+ * Return: zero on success, or Error if fail
  **/
 
 int main(int argc, char *argv[])
@@ -19,12 +19,10 @@ int main(int argc, char *argv[])
 	int num2;
 	int result;
 	char *operator = NULL;
-	int (*calc_func)(int, int);
 
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
 	*operator = argv[2][0];
-	calc_func = get_op_func(operator);
 
 	if (argc != 4)
 	{
@@ -41,7 +39,8 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit (100);
 	}
-	result = calc_func(num1, num2);
+	result = (*get_op_func(argv[2]))(atoi(argv[1]), atoi(argv[3]));
 
-	return (result);
+	printf("%d\n", result);
+	return (0);
 }
