@@ -25,11 +25,14 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit (98);
 	}
-	if (&argv[2][0] == NULL)
+	if (argv[2] == NULL)
 	{
 		printf("Error\n");
 		exit (99);
 	}
+
+	operator = argv[2];
+
 	if (atoi(argv[3]) == 0)
 	{
 		printf("Error\n");
