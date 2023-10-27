@@ -11,7 +11,7 @@
  * Return: result of operation, or Error if fail
  **/
 
-int main(argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int num1;
 	int num2;

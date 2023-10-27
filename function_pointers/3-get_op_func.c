@@ -22,7 +22,7 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i;
 
-	if (s == + || s == - || s == * || s == / || s == %)
+	if (s == +; || s == -; || s == *; || s == /; || s == %)
 	{
 		while (i = 0; i < ops;)
 		{
