@@ -24,8 +24,9 @@ int (*get_op_func(char *operator))(int, int)
 
 	while (i < 5)
 	{
-		if (operator[0] == ops[i].op[0] || ops [i].op == NULL)
+		if (operator[0] == ops[i].op[0] || ops[i].op == NULL)
 		{
+			strcmp(ops[i].op, operator);
 			return (ops[i].f);
 		}
 		i++;
