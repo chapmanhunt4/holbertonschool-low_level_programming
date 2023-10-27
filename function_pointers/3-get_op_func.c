@@ -20,15 +20,15 @@ int (*get_op_func(char *s))(int, int)
 		{"%", op_mod},
 		{NULL, NULL}
 	};
-	int i;
+	int i = 0;
 
-	if (s == +; || s == -; || s == *; || s == /; || s == %)
+	if (s == +) || (s == -) || (s == *) || (s == /) || (s == %)
 	{
-		while (i = 0; i < ops;)
+		while (i < ops;)
 		{
 			return (ops[i].f);
-			i++;
 		}
+		i++
 	}
 	return (NULL);
 }

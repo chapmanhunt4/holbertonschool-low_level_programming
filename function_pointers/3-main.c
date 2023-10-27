@@ -16,12 +16,12 @@ int main(int argc, char *argv[])
 	int num1;
 	int num2;
 	int result;
-	char *operator;
+	char *operator = NULL;
 	int (*calc_func)(int, int);
 
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
-	*operator = argv[2];
+	*operator = argv[2][0];
 	calc_func = get_op_func(operator);
 
 	if (argc != 4)
