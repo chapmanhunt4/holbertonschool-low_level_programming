@@ -16,7 +16,6 @@ int (*get_op_func(char *s))(int, int);
 int main(int argc, char *argv[])
 {
 	int result;
-	int 
 	char *operator = NULL;
 
 	*operator = argv[2][0];
