@@ -16,9 +16,9 @@ int (*get_op_func(char *s))(int, int);
 int main(int argc, char *argv[])
 {
 	int result;
-	char *operator = NULL;
+	char operator;
 
-	*operator = argv[2][0];
+	operator = argv[2][0];
 
 	if (argc != 4)
 	{
