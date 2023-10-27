@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
-	if ((argv[2] == NULL) || (argv[2][0] != '+' && argv[2][0] != '-' && argv[2][0] != '*' && argv[2][0] != '/' && argv[2][0] != '%'))
+	if (argv[2] == NULL)
 	{
 		printf("Error\n");
 		exit(99);
