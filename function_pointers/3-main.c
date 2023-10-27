@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit (100);
 	}
-	result = (*get_op_func(argv[2])), num1, num2;
+	result = ((*get_op_func(argv[2])), num1, num2);
 
 	printf("%d\n", result);
 	return (0);
