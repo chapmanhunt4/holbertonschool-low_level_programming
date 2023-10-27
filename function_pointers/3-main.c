@@ -14,9 +14,6 @@
 int main(int argc, char *argv[])
 {
 	int result;
-	char operator;
-
-	operator = argv[2][0];
 
 	if (argc != 4)
 	{
