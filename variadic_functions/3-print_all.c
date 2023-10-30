@@ -14,11 +14,15 @@ void print_all(const char * const format, ...)
 	int i = 0;
 	char *s;
 	va_list args;
+	char f;
+	char n;
 
 	va_start(args, format);
 
 	while (format && format[i])
 	{
+		f = format[i];
+		n = format[i + 1];
 		switch (format[i])
 		{
 			case 'c':
@@ -34,12 +38,16 @@ void print_all(const char * const format, ...)
 				s = va_arg(args, char *);
 				if (!s)
 				{
-					printf("(nil)");
+					s = "(nil)";
 				}
 				printf("%s", s);
 				break;
 			default:
 				break;
+		}
+		if (n != '\n' && (f == 'c' || f == 'i' || f == 'f' || f == 's'))
+		{
+			printf(", ");
 		}
 		i++;
 	}
