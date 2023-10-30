@@ -21,9 +21,9 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		if (i > 0 && separator)
 		{
-			printf("%s", separator)
+			printf("%s", separator);
 		}
-		printf("%s", va_arg(args, char));
+		printf("%d", va_arg(args, int));
 	}
 	va_end(args);
 	printf("\n");
