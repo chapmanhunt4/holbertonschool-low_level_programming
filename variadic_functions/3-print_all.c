@@ -20,6 +20,8 @@ void print_all(const char * const format, ...)
 	f = format[i];
 	n = format[i + 1];
 
+	va_start(args, format);
+
 	while (format && format[i])
 	{
 		switch (format[i])
