@@ -1,14 +1,16 @@
-#include <stddef.h>
 #ifndef MAIN
 #define MAIN
+#include <stddef.h>
 
 /**
  * struct node_s - singly linked list
  * @str: string
+ * @len: length of the string
  * @next: points to next node
  **/
 
-typedef struct node_s {
+typedef struct node_s
+{
 	char *str;
 	unsigned int len;
 	struct node_s *next;
