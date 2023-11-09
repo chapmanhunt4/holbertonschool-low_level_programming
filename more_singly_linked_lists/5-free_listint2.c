@@ -22,11 +22,11 @@ void free_listint2(listint_t **head)
 		ptr = *head;
 		while (ptr->next != NULL)
 		{
+			new_node = ptr;
 			ptr = ptr->next;
-			free(ptr);
-			ptr = new_node;
+			free(new_node);
 		}
-		free(new_node);
+		free(ptr);
 	}
 	*head = NULL;
 	free(*head);
