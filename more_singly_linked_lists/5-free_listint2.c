@@ -23,11 +23,12 @@ void free_listint2(listint_t **head)
 		}
 		else
 		{
-			while (ptr->next != NULL)
+			while (ptr != NULL)
 			{
-				ptr = ptr->next;
+				new_node = ptr->next
+				free(ptr);
+				ptr = new_node;
 			}
-			ptr->next = new_node;
 		}
 		free(new_node);
 	}
