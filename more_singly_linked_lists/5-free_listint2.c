@@ -13,7 +13,7 @@ void free_listint2(listint_t **head)
 
 	new_node = NULL;
 
-	if (head == NULL)
+	if (head = NULL)
 	{
 
 	}
