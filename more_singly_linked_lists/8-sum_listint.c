@@ -13,7 +13,7 @@ int sum_listint(listint_t *head)
 	listint_t *ptr;
 	unsigned int sum = 0;
 
-	if (head == NULL)
+	if (head != NULL)
 	{
 		ptr = head;
 		while (ptr != NULL)
