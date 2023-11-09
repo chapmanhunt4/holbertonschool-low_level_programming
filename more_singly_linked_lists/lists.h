@@ -5,13 +5,12 @@
 /**
  * struct node_s - singly linked list
  * @n: integer
- * @len: length of string
  * @next: points to next node
  **/
 
 typedef struct node_s
 {
-	int data;
+	int n;
 	struct node_s *next;
 } listint_t;
 
