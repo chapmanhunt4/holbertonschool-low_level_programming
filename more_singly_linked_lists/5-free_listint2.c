@@ -9,8 +9,6 @@
 
 void free_listint2(listint_t **head)
 {
-	listint_t *node_freer;
-
 	while (*head != NULL)
 	{
 		if (*head == NULL)
