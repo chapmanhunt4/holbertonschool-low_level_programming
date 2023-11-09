@@ -11,7 +11,7 @@ void free_listint2(listint_t **head)
 {
 	listint_t *new_node, *ptr;
 
-	new_node->next = NULL;
+	new_node = NULL;
 
 	if (*head == NULL)
 	{
