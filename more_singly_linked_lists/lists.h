@@ -1,5 +1,20 @@
 #ifndef MAIN
 #define MAIN
+#include <stddef.h>
+
+/**
+ * struct node_s - singly linked list
+ * @n: integer
+ * @len: length of string
+ * @next: points to next node
+ **/
+
+typedef struct node_s
+{
+	int n;
+	unsigned int len;
+	struct node_s *next;
+} listint_t;
 
 size_t print_listint(const listint_t *h);
 
