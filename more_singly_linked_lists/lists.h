@@ -11,7 +11,7 @@
 
 typedef struct node_s
 {
-	int n;
+	int data;
 	unsigned int len;
 	struct node_s *next;
 } listint_t;
