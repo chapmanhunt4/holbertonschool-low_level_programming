@@ -23,8 +23,8 @@ int pop_listint(listint_t **head)
 	{
 		temp = ptr;
 		data = temp->n;
-		ptr = ptr->next;
 		return (data);
+		ptr = ptr->next;
 	}
 	free(temp);
 }
