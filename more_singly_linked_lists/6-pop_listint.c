@@ -21,10 +21,13 @@ int pop_listint(listint_t **head)
 	}
 	else
 	{
-		temp = ptr;
-		ptr = ptr->next;
+		while (ptr->next != NULL)
+		{
+			temp = ptr;
+			ptr = ptr->next;
+		}
+		free(temp);
+		temp->n = data;
+		return (data);
 	}
-	free(temp);
-	temp->n = data;
-	return (data);
 }
