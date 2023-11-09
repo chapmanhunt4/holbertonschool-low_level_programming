@@ -9,7 +9,7 @@
 
 void free_listint2(listint_t **head)
 {
-	listint_t *ptr, new_node;
+	listint_t *ptr, *new_node;
 
 	new_node = NULL;
 
