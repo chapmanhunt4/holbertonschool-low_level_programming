@@ -16,7 +16,6 @@ void free_listint2(listint_t **head)
 
 	if (new_node)
 	{
-		new_node->n = n;
 		new_node->next = NULL;
 
 		if (*head == NULL)
@@ -33,6 +32,5 @@ void free_listint2(listint_t **head)
 			ptr->next = new_node;
 		}
 		free(new_node);
-		return (new_node);
 	}
 }
