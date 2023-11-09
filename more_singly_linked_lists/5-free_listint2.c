@@ -11,6 +11,7 @@ void free_listint2(listint_t **head)
 {
 	listint_t *new_node, *ptr;
 
+	new_node = malloc(sizeof(listint_t));
 
 	if (new_node)
 	{
