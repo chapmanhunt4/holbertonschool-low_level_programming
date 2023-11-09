@@ -15,6 +15,10 @@ void free_list(list_t *head)
 	{
 		node_freer = head;
 		head = head->next;
+		if (node_freer->str)
+		{
+			free(node_freer->str);
+		}
 		free(node_freer);
 	}
 }
