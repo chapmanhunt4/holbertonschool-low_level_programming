@@ -23,7 +23,6 @@ void free_listint2(listint_t **head)
 		}
 		else
 		{
-			ptr = *head;
 			while (ptr->next != NULL)
 			{
 				ptr = ptr->next;
