@@ -9,21 +9,30 @@
 
 void free_listint2(listint_t **head)
 {
-	listint_t *ptr;
+	listint_t *new_node, *ptr;
 
-	if (*head == NULL)
-	{
+	new_node = malloc(sizeof(listint_t));
 
-	}
-	else
+	if (new_node)
 	{
-		ptr = *head;
-		while (ptr != NULL)
+		new_node->next = NULL;
+
+		if (*head == NULL)
 		{
-			ptr = ptr->next;
-			free(ptr);
+
 		}
-		free(*head);
+		else
+		{
+			ptr = *head;
+			while (ptr != NULL)
+			{
+				ptr = ptr->next;
+			}
+			ptr->next = new_node;
+			free(ptr);
+			free(new_node);
+		}
+		free(new_node);
 	}
 	*head = NULL;
 	free(*head);
