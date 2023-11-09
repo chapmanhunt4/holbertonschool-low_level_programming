@@ -12,7 +12,6 @@
 typedef struct node_s
 {
 	int data;
-	unsigned int len;
 	struct node_s *next;
 } listint_t;
 
