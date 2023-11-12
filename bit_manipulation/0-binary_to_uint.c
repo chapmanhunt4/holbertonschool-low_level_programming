@@ -11,7 +11,6 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	char *str = *b;
 	int i;
 	int length;
 	unsigned int decimal = 0;
