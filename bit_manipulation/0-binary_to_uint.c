@@ -11,7 +11,7 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	char str = b;
+	char *str = b;
 	int i;
 	unsigned int lastDigit;
 	unsigned int decimal = 0;
@@ -22,7 +22,7 @@ unsigned int binary_to_uint(const char *b)
 		return (0);
 	}
 
-	i = strlen(str) - 1;
+	i = strlen(b) - 1;
 	while (i > 0)
 	{
 		lastDigit = str % 10;
