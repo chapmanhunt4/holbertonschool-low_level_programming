@@ -11,7 +11,7 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	char *str = b;
+	char *str = *b;
 	int i;
 	unsigned int lastDigit;
 	unsigned int decimal = 0;
