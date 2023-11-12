@@ -13,7 +13,7 @@ unsigned int binary_to_uint(const char *b)
 {
 	char *str = *b;
 	int i;
-	unsigned int lastDigit;
+	int length;
 	unsigned int decimal = 0;
 	unsigned int base = 1;
 
@@ -22,12 +22,13 @@ unsigned int binary_to_uint(const char *b)
 		return (0);
 	}
 
-	i = strlen(b) - 1;
-	while (i > 0)
+	length = strlen(b);
+	for (i = length - 1; i >= 0; i--)
 	{
-		lastDigit = str % 10;
-		str = str / 10;
-		decimal += lastDigit * base;
+		if (b[i] == '1')
+		{
+			decimal += base;
+		}
 		base = base * 2;
 	}
 	return (decimal);
