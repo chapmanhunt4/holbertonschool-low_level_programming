@@ -13,12 +13,13 @@
 int set_bit(unsigned long int *n, unsigned int index)
 {
 	unsigned int i, size;
+	unsigned long int ptr = *n;
 
 	size = sizeof(n) * 8;
 
 	if (index == 0)
 	{
-		n = '1';
+		ptr = '1';
 		return (1);
 	}
 
@@ -26,7 +27,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 	{
 		if (i == index)
 		{
-			n = '1';
+			ptr = '1';
 		}
 		return (1);
 	}
