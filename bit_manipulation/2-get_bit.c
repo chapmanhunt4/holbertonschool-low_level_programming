@@ -12,11 +12,16 @@
 
 int get_bit(unsigned long int n, unsigned int index)
 {
-	int i, size;
+	unsigned int i, size;
 
 	size = sizeof(n) * 8;
 
-	for (i = size - 1; i >= 0; i--)
+	if (index == 0)
+	{
+		return ((n >> 0) & 1);
+	}
+
+	for (i = size - 1; i > 0; i--)
 	{
 		if (i == index)
 		{
