@@ -17,19 +17,12 @@ int set_bit(unsigned long int *n, unsigned int index)
 
 	size = sizeof(n) * 8;
 
-	if (index == 0)
+	if (index >= size)
 	{
-		ptr = "1";
-		return (1);
+		return (-1);
 	}
 
-	for (i = size - 1; i > 0; i--)
-	{
-		if (i == index)
-		{
-			ptr = "1";
-		}
-		return (1);
-	}
+	*n = *n | (1 << index);
+
 	return (-1);
 }
