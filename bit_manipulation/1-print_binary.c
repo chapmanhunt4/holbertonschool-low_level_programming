@@ -34,7 +34,7 @@ void print_binary(unsigned long int n)
 			flag = 1;
 			printf("1");
 		}
-		else if (flag == 0)
+		else
 		{
 			printf("0");
 		}
