@@ -11,6 +11,7 @@
 void print_binary(unsigned long int n)
 {
 	int i, k, size;
+	int flag = 0;
 
 	size = sizeof(n) * 8;
 
@@ -30,9 +31,10 @@ void print_binary(unsigned long int n)
 		k = n >> i;
 		if (k & 1)
 		{
+			flag = 1;
 			printf("1");
 		}
-		else
+		else if (flag == 0)
 		{
 			printf("0");
 		}
