@@ -12,8 +12,7 @@
 
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned int i, size;
-	unsigned long int ptr = *n;
+	unsigned int size;
 
 	size = sizeof(n) * 8;
 
