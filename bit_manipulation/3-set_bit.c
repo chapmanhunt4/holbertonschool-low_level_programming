@@ -19,7 +19,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 
 	if (index == 0)
 	{
-		ptr = '1';
+		ptr = "1";
 		return (1);
 	}
 
@@ -27,8 +27,9 @@ int set_bit(unsigned long int *n, unsigned int index)
 	{
 		if (i == index)
 		{
-			ptr = '1';
+			ptr = "1";
 		}
 		return (1);
 	}
 	return (-1);
+}
