@@ -15,6 +15,12 @@ void print_binary(unsigned long int n)
 
 	size = sizeof(n) * 8;
 
+	if (n == 0)
+	{
+		printf("0\n");
+		exit(0);
+	}
+
 	for (i = size - 1; i >= 0; i--)
 	{
 		k = n >> 1;
