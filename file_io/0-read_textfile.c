@@ -16,30 +16,26 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int n, descriptor;
-	long unsigned int i;
+	unsigned long int i;
 	char *size;
 
 	size = malloc(sizeof(char) * letters);
-
 	if (filename == NULL)
 	{
 		return (0);
 	}
-
 	descriptor = open(filename, O_RDONLY);
 	if (!descriptor)
 	{
 		close(descriptor);
 		return (0);
 	}
-
 	n = read(descriptor, size, letters);
 	if (n <= 0)
 	{
 		close(descriptor);
 		return (0);
 	}
-
 	for (i = 0; i < letters && (int)i < n; i++)
 	{
 		write(STDOUT_FILENO, &size[i], 1);
