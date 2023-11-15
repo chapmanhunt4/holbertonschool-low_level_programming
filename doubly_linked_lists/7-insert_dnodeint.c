@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * insert_dnodeint_at_index - inserts node at index
+ * insert_dnodeint_at_index - inserts node at index on a linked list
  * @h: pointer to first node in list
  * @idx: point of insertion in list
  * @n: data given for new node
@@ -38,6 +38,11 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	{
 		temp = temp->next;
 		i++;
+	}
+	if (temp == NULL)
+	{
+		free(new_node);
+		return (NULL);
 	}
 	if (temp->next == NULL)
 	{
